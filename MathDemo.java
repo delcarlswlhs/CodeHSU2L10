@@ -43,5 +43,21 @@ public class MathDemo{
         //print
         System.out.println("The area of a circle with a radius of " + radius + " is " + area1);
         
+        //random numbers
+        double firstRand = Math.random(); //will result in a decimal under 1
+        double secondRand = (int)(firstRand *10); //this gives me between 0 and 9
+        
+        //how about between 0 and 99
+        secondRand = (int)(firstRand * 100);
+        
+        //how about between 0 and 7
+        secondRand = (int)(firstRand*(7+1));
+        
+        //template for getting a random number from 0 to n
+        //int randInt = (int)(Math.random() * (n+1));
+        
+        System.out.println("firstRand:" + firstRand);
+        System.out.println("secondRand:" + secondRand);
+        
     }
 }
