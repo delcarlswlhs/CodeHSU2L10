@@ -56,6 +56,18 @@ public class MathDemo{
         //template for getting a random number from 0 to n
         //int randInt = (int)(Math.random() * (n+1));
         
+        //get a random number between 1 and 6
+        int randDie = (int)(Math.random()*6+1); //multiplying by 6 can get up to 5.99999.... 
+        //but adding one gets it to 6.99999... and casting as an it changes it to 6
+        //adding 1 will prevent it from rounding to zero as well
+        
+        //template for getting a random number from m to n
+        //int randInt = (int) (Math.random()*(n-m+1)+m);
+        //int randInt = (int) (Math.random()*(range+1) + start);
+        
+        //not on AP test but...
+        //you can create a Random class
+        
         System.out.println("firstRand:" + firstRand);
         System.out.println("secondRand:" + secondRand);
         
